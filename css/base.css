@@ -1,0 +1,35 @@
+html,body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /*盒子模型，很关键，是免死金牌*/
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+}
+/* 清除浮动 */
+.clearfix::before,
+.clearfix::after{
+    content:'';
+    display: block;
+    line-height: 0;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.f_l{
+    float: left;
+}
+.f_r{
+    float: right;
+}

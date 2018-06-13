@@ -1,9 +1,9 @@
 .grbar-default {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7;
+  background-color: rgba(248, 248, 248, 0);
+  border-color: #777;
 }
 .grbar-default .navbar-brand {
-  color: #777;
+  color: #fff;
 }
 .grbar-default .navbar-brand:hover,
 .grbar-default .navbar-brand:focus {
@@ -11,10 +11,10 @@
   background-color: transparent;
 }
 .grbar-default .navbar-text {
-  color: #777;
+  color: #fff;
 }
 .grbar-default .navbar-nav > li > a {
-  color: #777;
+  color: #fff;
 }
 .grbar-default .navbar-nav > li > a:hover,
 .grbar-default .navbar-nav > li > a:focus {
@@ -93,4 +93,70 @@ fieldset[disabled] .grbar-default .btn-link:hover,
 .grbar-default .btn-link[disabled]:focus,
 fieldset[disabled] .grbar-default .btn-link:focus {
   color: #ccc;
+}
+.banner {
+  height: 700px;
+  width: 100%;
+  background: url("../image/banner.jpg") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+.banner .banner_box {
+  position: absolute;
+  height: 500px;
+  width: 996px;
+  top: 150px;
+  left: 50%;
+  margin-left: -498px;
+}
+.banner .banner_box .banner_box_left {
+  height: 100%;
+  background: url("../image/dawnbus.jpg") no-repeat;
+  background-size: 100% 100%;
+}
+.banner .banner_box .banner_box_right {
+  height: 50%;
+  background-color: blue;
+}
+.banner .banner_box div:nth-child(2) {
+  background: url("../image/baolie.jpg");
+  background-size: 100%;
+}
+.banner .banner_box div:nth-child(3) {
+  background: url("../image/miaosu.jpeg");
+  background-size: 100% 100%;
+}
+.banner .banner_box div:nth-child(4) {
+  background: url("../image/lalaland.jpg");
+  background-size: 100% 100%;
+}
+.banner .banner_box div:nth-child(5) {
+  background: url("../image/renjianshige.jpg");
+  background-size: 100% ;
+}
+@media only screen and (max-width: 996px) {
+  .banner {
+    width: 100%;
+    height: 600px;
+  }
+  .banner .banner_box {
+    height: 386px;
+    width: 767px;
+    margin-left: -384px;
+  }
+  .navbar-brand {
+    margin-left: 15px!important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .banner {
+    width: 100%;
+  }
+  .banner .banner_box {
+    width: 100%;
+    top: 50px;
+    left: 0px;
+    margin: 0;
+    padding: 0;
+  }
 }
