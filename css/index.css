@@ -166,7 +166,7 @@ fieldset[disabled] .grbar-default .btn-link:focus {
   font-size: 15px;
 }
 .banner .banner_box div:nth-child(3) span {
-  width: 95%;
+  width: 90%;
   position: absolute;
   bottom: 20px;
   overflow: hidden;
@@ -216,6 +216,7 @@ fieldset[disabled] .grbar-default .btn-link:focus {
   }
   .banner {
     width: 100%;
+    height: 822px;
   }
   .banner .banner_box {
     width: 100%;
@@ -226,5 +227,223 @@ fieldset[disabled] .grbar-default .btn-link:focus {
   }
   .banner .banner_box div:nth-child(3) {
     background-position-y: -70px;
+  }
+}
+.grocery_content .grocery_content_menu {
+  height: 100px;
+  width: 100%;
+  position: relative;
+}
+.grocery_content .grocery_content_menu ul {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -300px;
+}
+.grocery_content .grocery_content_menu ul li {
+  float: left;
+  width: 100px;
+  text-align: center;
+  line-height: 20px;
+  position: relative;
+}
+.grocery_content .grocery_content_menu ul li a {
+  color: #000;
+  font-size: 20px;
+}
+.grocery_content .grocery_content_menu ul li a:hover {
+  text-decoration: none;
+}
+.grocery_content .grocery_content_menu ul li:first-child:before {
+  content: '';
+  background-color: #000;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  bottom: -6px;
+}
+.grocery_content .grocery_content_menu ul li:nth-child(n+2):hover::before {
+  content: '';
+  background-color: #000;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  bottom: -6px;
+}
+.grocery_content .grocery_content_menu ul li:nth-child(n+2)::after {
+  content: '|';
+  position: absolute;
+  left: 0px;
+}
+.grocery_content .grocery_content_text {
+  position: relative;
+}
+.grocery_content .grocery_content_text ul {
+  width: 1200px;
+  position: absolute;
+  left: 50%;
+  margin-left: -600px;
+}
+.grocery_content .grocery_content_text ul li {
+  float: left;
+  height: 350px;
+  width: 280px;
+  margin: 10px;
+  background-color: #fff;
+}
+.grocery_content .grocery_content_text ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.grocery_content .grocery_content_text ul li a .gr_content_text_img {
+  width: 100%;
+  height: 200px;
+}
+.grocery_content .grocery_content_text ul li a .gr_content_text_img:hover {
+  transition: all 0.3s;
+  transform: scale(1.1);
+}
+.grocery_content .grocery_content_text ul li a .gr_content_text_span {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+}
+.grocery_content .grocery_content_text ul li a .gr_content_text_span span:nth-child(1) {
+  font-size: 10px;
+  color: #b02ff8;
+  font-weight: bold;
+}
+.grocery_content .grocery_content_text ul li a .gr_content_text_span span:nth-child(1):before {
+  content: '';
+  background-color: red;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  left: 0px;
+  bottom: -6px;
+}
+.grocery_content .grocery_content_text ul li a .gr_content_text_span span:nth-child(3) {
+  font-size: 20px;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /** 对象作为伸缩盒子模型显示 **/
+  -webkit-box-orient: vertical;
+  /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+  -webkit-line-clamp: 1;
+  /** 显示的行数 **/
+  overflow: hidden;
+  /** 隐藏超出的内容 **/
+}
+.grocery_content .grocery_content_text ul li a .gr_content_text_span span:last-child {
+  display: block;
+  color: #4b4b4b;
+  width: 100%;
+  height: 40px;
+  font-size: 15px;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /** 对象作为伸缩盒子模型显示 **/
+  -webkit-box-orient: vertical;
+  /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+  -webkit-line-clamp: 2;
+  /** 显示的行数 **/
+  overflow: hidden;
+  /** 隐藏超出的内容 **/
+}
+.grocery_content .grocery_content_text ul li:nth-child(1) a .gr_content_text_img {
+  background: url("../image/cube.jpg");
+  background-size: 100% 100%;
+}
+.grocery_content .grocery_content_text ul li:nth-child(2) a .gr_content_text_img {
+  background: url("../image/RNG.jpg");
+  background-size: 100% 100%;
+}
+.grocery_content .grocery_content_text ul li:nth-child(3) a .gr_content_text_img {
+  background: url("../image/tingyuan.jpg");
+  background-size: 100% 100%;
+}
+.grocery_content .grocery_content_text ul li:nth-child(4) a .gr_content_text_img {
+  background: url("../image/zoo.jpg");
+  background-size: 100% 100%;
+}
+@media only screen and (max-width: 1200px) {
+  .grocery_content .grocery_content_text {
+    position: relative;
+  }
+  .grocery_content .grocery_content_text ul {
+    width: 996px;
+    position: absolute;
+    left: 50%;
+    margin-left: -498px;
+  }
+  .grocery_content .grocery_content_text ul li {
+    margin-left: 32px;
+  }
+}
+@media only screen and (max-width: 996px) {
+  .grocery_content .grocery_content_text {
+    position: relative;
+  }
+  .grocery_content .grocery_content_text ul {
+    width: 768px;
+    position: absolute;
+    left: 50%;
+    margin-left: -384px;
+  }
+  .grocery_content .grocery_content_text ul li {
+    margin-left: 60px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .grocery_content .grocery_content_menu {
+    height: 50px;
+    width: 100%;
+    position: relative;
+  }
+  .grocery_content .grocery_content_menu ul {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -150px;
+  }
+  .grocery_content .grocery_content_menu ul li {
+    float: left;
+    width: 50px;
+    text-align: center;
+    line-height: 15px;
+    position: relative;
+  }
+  .grocery_content .grocery_content_menu ul li a {
+    color: #000;
+    font-size: 15px;
+  }
+  .grocery_content .grocery_content_text ul {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    margin-left: 0px;
+  }
+  .grocery_content .grocery_content_text ul li {
+    width: 100%;
+    height: 260px;
+    margin: 0;
+    padding: 0;
+  }
+  .grocery_content .grocery_content_text ul li a .gr_content_text_span span:first-child {
+    display: none;
+  }
+  .grocery_content .grocery_content_text ul li a .gr_content_text_span span:last-child {
+    display: none;
   }
 }
