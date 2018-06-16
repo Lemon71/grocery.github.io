@@ -286,7 +286,7 @@ fieldset[disabled] .grbar-default .btn-link:focus {
 }
 .grocery_content .grocery_content_text ul {
   width: 1200px;
-  position: absolute;
+  position: relative;
   left: 50%;
   margin-left: -600px;
 }
@@ -321,28 +321,13 @@ fieldset[disabled] .grbar-default .btn-link:focus {
   font-size: 10px;
   color: #b02ff8;
   font-weight: bold;
-}
-.grocery_content .grocery_content_text ul li a .gr_content_text_span span:nth-child(1):before {
-  content: '';
-  background-color: red;
-  width: 4px;
-  height: 4px;
   position: absolute;
-  left: 0px;
-  bottom: -6px;
+  top: -15px;
 }
 .grocery_content .grocery_content_text ul li a .gr_content_text_span span:nth-child(3) {
   font-size: 20px;
-  word-break: break-all;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  /** 对象作为伸缩盒子模型显示 **/
-  -webkit-box-orient: vertical;
-  /** 设置或检索伸缩盒对象的子元素的排列方式 **/
-  -webkit-line-clamp: 1;
-  /** 显示的行数 **/
-  overflow: hidden;
-  /** 隐藏超出的内容 **/
+  position: absolute;
+  top: -3px;
 }
 .grocery_content .grocery_content_text ul li a .gr_content_text_span span:last-child {
   display: block;
@@ -383,7 +368,7 @@ fieldset[disabled] .grbar-default .btn-link:focus {
   }
   .grocery_content .grocery_content_text ul {
     width: 996px;
-    position: absolute;
+    position: relative;
     left: 50%;
     margin-left: -498px;
   }
@@ -397,7 +382,7 @@ fieldset[disabled] .grbar-default .btn-link:focus {
   }
   .grocery_content .grocery_content_text ul {
     width: 768px;
-    position: absolute;
+    position: relative;
     left: 50%;
     margin-left: -384px;
   }
@@ -412,7 +397,7 @@ fieldset[disabled] .grbar-default .btn-link:focus {
     position: relative;
   }
   .grocery_content .grocery_content_menu ul {
-    position: absolute;
+    position: relative;
     left: 50%;
     top: 50%;
     margin-left: -150px;
