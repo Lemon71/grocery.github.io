@@ -318,7 +318,7 @@ fieldset[disabled] .grbar-default .btn-link:focus {
     position: relative;
     ul{
       width: 1200px;
-      position: absolute;
+      position: relative;
       left: 50%;
       margin-left: -600px;
       li{
@@ -352,24 +352,20 @@ fieldset[disabled] .grbar-default .btn-link:focus {
               font-size: 10px;
               color: #b02ff8;
               font-weight: bold;
-            }
-            span:nth-child(1):before{
-              content: '';
-              background-color: red;
-              width: 4px;
-              height: 4px;
               position: absolute;
-              left: 0px;
-              bottom: -6px;
+              top: -15px;
             }
+
             span:nth-child(3){
               font-size: 20px;
-              word-break: break-all;
-              text-overflow: ellipsis;
-              display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
-              -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
-              -webkit-line-clamp: 1; /** 显示的行数 **/
-              overflow: hidden;  /** 隐藏超出的内容 **/
+              position: absolute;
+              top: -3px;
+              //word-break: break-all;
+              //text-overflow: ellipsis;
+              //display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+              //-webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+              //-webkit-line-clamp: 2; /** 显示的行数 **/
+              //overflow: hidden;  /** 隐藏超出的内容 **/
             }
             span:last-child{
               display: block;
@@ -441,7 +437,7 @@ fieldset[disabled] .grbar-default .btn-link:focus {
       position: relative;
       ul{
         width: 996px;
-        position: absolute;
+        position: relative;
         left: 50%;
         margin-left: -498px;
         li{
@@ -459,7 +455,7 @@ fieldset[disabled] .grbar-default .btn-link:focus {
       position: relative;
       ul{
         width: 768px;
-        position: absolute;
+        position: relative;
         left: 50%;
         margin-left: -384px;
         li{
@@ -477,7 +473,7 @@ fieldset[disabled] .grbar-default .btn-link:focus {
       width: 100%;
       position: relative;
       ul{
-        position: absolute;
+        position: relative;
         left: 50%;
         top: 50%;
         margin-left: -150px;

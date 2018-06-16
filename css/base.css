@@ -5,6 +5,7 @@ html,body{
     /*盒子模型，很关键，是免死金牌*/
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+
 }
 html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
     margin: 0;
